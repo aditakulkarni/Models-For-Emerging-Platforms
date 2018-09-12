@@ -1,0 +1,46 @@
+Following are the results of different runs :
+
+a. 1 reader, 1 asker
+
+Start time : 18:54:06.148955242
+End time : 18:54:27.210738415
+Total words added:   19582
+Total queries made:  2047
+Total run time : 21s
+
+b. 16 readers, 2 askers
+
+Start time : 18:56:54.563357137
+End time : 18:57:32.065328707
+Total words added:   402163
+Total queries made:  7278
+Total run time : 38s
+
+c. 4 readers, 8 askers
+
+Start time : 19:00:36.236296918
+End time : 19:02:30.943369412
+Total words added:   105641
+Total queries made:  48064
+Total run time : 1 min 54s
+
+d. 16 readers, 32 askers
+
+It required more than 3 hrs to complete.
+More than 700000 queries were made and words were added.
+
+e. 64 readers, 64 askers
+
+It required more than 3 hrs to complete.
+More than 700000 queries were made and words were added.
+
+Description and Scaling:
+
+As the number of readers are increased, the number of words added are also increased.
+As the number of askers  are increased, the number of queries made are increased.
+As the greater number of readers and writers cause increase in the count of words added and queries made, the time required for execution also increases.
+
+The projects scales by using Buffer Sizes for Readers [32] and Askers [8], so that each of them do not wait for the channel to be empty to write in. 
+Secondly the Listen() uses Select which does not block for a particular request. Instead executes the one which is ready.
+
+Developed and Tested on Machine with number of cores : 4
