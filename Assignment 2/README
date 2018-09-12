@@ -1,0 +1,40 @@
+Name of team members:
+
+Abhijit Jagdale
+ajagdal1@binghamton.edu
+
+Adita Kulkarni
+akulka17@binghamton.edu
+
+
+Yes, The Program is able to compile and execute. The bar charts and output files shows the same.
+
+The code was tested on the following specification :
+
+Software : 
+1) Operating System : Linux Mint 18
+2) Kernel Version 4.4.0-21
+
+Hardware : 
+1) Processor : Intel Core i7-6500U CPU @ 2.50 GHz * 2
+2) Memory : 8 GB
+3) Graphics Card details :
+   Device 0: "GeForce 930M"
+   CUDA Driver Version / Runtime Version          8.0 / 8.0
+   CUDA Capability Major/Minor version number:    5.0
+   Total amount of global memory:                 2003 MBytes (2100232192 bytes)
+   ( 3) Multiprocessors, (128) CUDA Cores/MP:     384 CUDA Cores
+   GPU Max Clock rate:                            941 MHz (0.94 GHz)
+   Memory Clock rate:                             900 Mhz
+   Memory Bus Width:                              64-bit
+   L2 Cache Size:                                 1048576 bytes
+
+Output file naming conventions :
+
+12UV => Output file for 2^12 <U,V>
+12U2V =>  Output file for 2^12 <2*U,V>
+12UV2 =>  Output file for 2^12 <U,2*V>
+12U2V2 =>  Output file for 2^12 <2*U,2*V>
+12UhalfV => Output file for 2^12 <U/2,V>
+12UVhalf => Output file for 2^12 <U,V/2>
+12UhalfVhalf => Output file for 2^12 <U/2,V/2>
